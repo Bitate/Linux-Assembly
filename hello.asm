@@ -11,7 +11,6 @@
         # .global makes the symbol visible to ld.
         .global _start
         
-# What's this?
 _start:
         # write(1, message, 13)
         mov     $1, %rax                # system call 1 is write

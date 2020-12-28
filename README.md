@@ -1,1 +1,4 @@
-# Let's dive deeper into x86 processor by means of Assembly language :)
+# Get Hands Dirty on Assembly :)
+
+## References
+* [NASM Tutorial](https://cs.lmu.edu/~ray/notes/nasmtutorial/)
