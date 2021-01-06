@@ -22,6 +22,7 @@ response     resb  1
      .STARTUP
      PutStr  name_msg            ; prompt user for his/her name
      GetStr  user_name,16        ; read name (max. 15 characters)
+
 ask_count:
      PutStr  query_msg           ; prompt for repeat count
      GetInt  CX                  ; read repeat count
@@ -30,7 +31,8 @@ ask_count:
      PutStr  confirm_msg2
      GetCh   [response]          ; read user response
      cmp     byte [response],'y' ; if 'y', display welcome message
-     jne     ask_count           ; otherwise, request repeat count
+     jne     ask_count           ; if not equal to 'y', repeat asking user :D
+
 display_msg:
      PutStr  welcome_msg         ; display welcome message
      PutStr  user_name           ; display the user name

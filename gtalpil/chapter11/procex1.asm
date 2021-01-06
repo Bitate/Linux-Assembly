@@ -20,7 +20,7 @@ sum_msg      db   "The sum is ",0
       call    sum            ; returns sum in AX
       PutStr  sum_msg        ; display sum
       PutInt  AX
-      nwln
+      nwln                   ;
 done:
       .EXIT
 

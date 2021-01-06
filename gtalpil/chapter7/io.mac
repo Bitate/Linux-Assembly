@@ -1,6 +1,4 @@
-;; double-semicolon denotes the comment
-;; Where can I find these implementations?
-extern   proc_nwln, proc_PutCh, proc_PutStr     
+extern   proc_nwln, proc_PutCh, proc_PutStr
 extern   proc_GetStr, proc_GetCh
 extern   proc_PutInt, proc_GetInt
 extern   proc_PutLInt, proc_GetLInt
@@ -107,10 +105,10 @@ _start:
 
 ;;-------------------------------------------------------------------
 %macro  PutInt  1
-        push    AX              ; preserve the original value of AX
+        push    AX
         mov     AX,%1
         call    proc_PutInt
-        pop     AX              ; preserve the original value of AX
+        pop     AX
 %endmacro
 ;;-------------------------------------------------------------------
 

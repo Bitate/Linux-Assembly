@@ -1,0 +1,138 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           Intel 80386
+  Version:                           0x1
+  Entry point address:               0x8049000
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          11128 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         3
+  Size of section headers:           40 (bytes)
+  Number of section headers:         8
+  Section header string table index: 7
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        08049000 001000 0003a2 00  AX  0   0 16
+  [ 2] .data             PROGBITS        0804a000 002000 000153 00  WA  0   0  4
+  [ 3] .bss              NOBITS          0804a154 002153 000218 00  WA  0   0  4
+  [ 4] .comment          PROGBITS        00000000 002153 00001f 00      0   0  1
+  [ 5] .symtab           SYMTAB          00000000 002174 0004d0 10      6  64  4
+  [ 6] .strtab           STRTAB          00000000 002644 0004fc 00      0   0  1
+  [ 7] .shstrtab         STRTAB          00000000 002b40 000035 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x000000 0x08048000 0x08048000 0x00094 0x00094 R   0x1000
+  LOAD           0x001000 0x08049000 0x08049000 0x003a2 0x003a2 R E 0x1000
+  LOAD           0x002000 0x0804a000 0x0804a000 0x00153 0x0036c RW  0x1000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     
+   01     .text 
+   02     .data .bss 
+
+There is no dynamic section in this file.
+
+There are no relocations in this file.
+
+The decoding of unwind sections for machine type Intel 80386 is not currently supported.
+
+Symbol table '.symtab' contains 77 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 08049000     0 SECTION LOCAL  DEFAULT    1 
+     2: 0804a000     0 SECTION LOCAL  DEFAULT    2 
+     3: 0804a154     0 SECTION LOCAL  DEFAULT    3 
+     4: 00000000     0 SECTION LOCAL  DEFAULT    4 
+     5: 00000000     0 FILE    LOCAL  DEFAULT  ABS sample.asm
+     6: 0804a000     0 NOTYPE  LOCAL  DEFAULT    2 name_msg
+     7: 0804a019     0 NOTYPE  LOCAL  DEFAULT    2 query_msg
+     8: 0804a044     0 NOTYPE  LOCAL  DEFAULT    2 confirm_msg1
+     9: 0804a05c     0 NOTYPE  LOCAL  DEFAULT    2 confirm_msg2
+    10: 0804a06b     0 NOTYPE  LOCAL  DEFAULT    2 welcome_msg
+    11: 0804a154     0 NOTYPE  LOCAL  DEFAULT    3 user_name
+    12: 0804a164     0 NOTYPE  LOCAL  DEFAULT    3 response
+    13: 0804901f     0 NOTYPE  LOCAL  DEFAULT    1 ask_count
+    14: 08049079     0 NOTYPE  LOCAL  DEFAULT    1 display_msg
+    15: 00000000     0 FILE    LOCAL  DEFAULT  ABS io.asm
+    16: 0000000d     0 NOTYPE  LOCAL  DEFAULT  ABS CR
+    17: 0000000a     0 NOTYPE  LOCAL  DEFAULT  ABS LF
+    18: 00000100     0 NOTYPE  LOCAL  DEFAULT  ABS BUF_SIZE
+    19: 0804a098     0 NOTYPE  LOCAL  DEFAULT    2 new_line
+    20: 0804a099     0 NOTYPE  LOCAL  DEFAULT    2 ?range_msg
+    21: 0804a0da     0 NOTYPE  LOCAL  DEFAULT    2 ?no_input_msg
+    22: 0804a105     0 NOTYPE  LOCAL  DEFAULT    2 ?long_range_msg
+    23: 0804a168     0 NOTYPE  LOCAL  DEFAULT    3 temp_char
+    24: 0804a169     0 NOTYPE  LOCAL  DEFAULT    3 temp_str
+    25: 0804a269     0 NOTYPE  LOCAL  DEFAULT    3 buffer
+    26: 080490f3     0 NOTYPE  LOCAL  DEFAULT    1 proc_PutStr.rpt_putstr
+    27: 08049102     0 NOTYPE  LOCAL  DEFAULT    1 proc_PutStr.skip_putstr
+    28: 08049127     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetStr.loop_getstr
+    29: 08049133     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetStr.done_getstr
+    30: 08049164     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetCh.skip_getch
+    31: 08049169     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetCh.done_getch
+    32: 08049180     0 NOTYPE  LOCAL  DEFAULT    1 proc_PutInt.pi_positive
+    33: 08049192     0 NOTYPE  LOCAL  DEFAULT    1 proc_PutInt.putint_repeat
+    34: 080491b8     0 NOTYPE  LOCAL  DEFAULT    1 proc_PutInt.pi_write_numb
+    35: 080491c7     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetInt.read_input
+    36: 080491dc     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetInt.skip_blanks
+    37: 080491e4     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetInt.non_blanks
+    38: 080491f3     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetInt.test_next_cha
+    39: 080491fb     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetInt.valid_char
+    40: 08049204     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetInt.out_of_range
+    41: 08049212     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetInt.no_input
+    42: 08049220     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetInt.invalid_char
+    43: 08049241     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetInt.incSI
+    44: 08049242     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetInt.convert_loop
+    45: 0804925f     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetInt.conv_done
+    46: 08049275     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetInt.number_OK
+    47: 0804927d     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetInt.num_done
+    48: 08049299     0 NOTYPE  LOCAL  DEFAULT    1 proc_PutLInt.pli_positive
+    49: 080492ad     0 NOTYPE  LOCAL  DEFAULT    1 proc_PutLInt.putLint_repe
+    50: 080492d3     0 NOTYPE  LOCAL  DEFAULT    1 proc_PutLInt.pli_write_nu
+    51: 080492e2     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetLInt.read_L_input
+    52: 080492f7     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetLInt.skip_L_blank
+    53: 080492ff     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetLInt.non_L_blanks
+    54: 0804930e     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetLInt.test_next_L_
+    55: 08049316     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetLInt.valid_L_char
+    56: 08049321     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetLInt.out_of_L_ran
+    57: 0804932f     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetLInt.no_L_input
+    58: 0804933d     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetLInt.invalid_L_ch
+    59: 0804935f     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetLInt.L_incSI
+    60: 08049360     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetLInt.L_convert_lo
+    61: 0804937c     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetLInt.L_conv_done
+    62: 08049394     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetLInt.L_number_OK
+    63: 0804939b     0 NOTYPE  LOCAL  DEFAULT    1 proc_GetLInt.L_num_done
+    64: 080490c9     0 NOTYPE  GLOBAL DEFAULT    1 proc_PutCh
+    65: 080492dc     0 NOTYPE  GLOBAL DEFAULT    1 proc_GetLInt
+    66: 08049105     0 NOTYPE  GLOBAL DEFAULT    1 proc_GetStr
+    67: 08049284     0 NOTYPE  GLOBAL DEFAULT    1 proc_PutLInt
+    68: 08049000     0 NOTYPE  GLOBAL DEFAULT    1 _start
+    69: 080490b0     0 NOTYPE  GLOBAL DEFAULT    1 proc_nwln
+    70: 0804916b     0 NOTYPE  GLOBAL DEFAULT    1 proc_PutInt
+    71: 080490e7     0 NOTYPE  GLOBAL DEFAULT    1 proc_PutStr
+    72: 0804a153     0 NOTYPE  GLOBAL DEFAULT    3 __bss_start
+    73: 0804a153     0 NOTYPE  GLOBAL DEFAULT    2 _edata
+    74: 0804a36c     0 NOTYPE  GLOBAL DEFAULT    3 _end
+    75: 08049139     0 NOTYPE  GLOBAL DEFAULT    1 proc_GetCh
+    76: 080491c1     0 NOTYPE  GLOBAL DEFAULT    1 proc_GetInt
+
+No version information found in this file.
