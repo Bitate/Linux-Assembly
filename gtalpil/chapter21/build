@@ -1,0 +1,4 @@
+#!/bin/bash
+
+nasm -f elf64 -o hll_test.o hll_test.asm
+gcc -o hll_ex1c.elf hll_ex1c.c hll_test.o

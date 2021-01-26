@@ -1,5 +1,13 @@
 # Get Hands Dirty on Assembly Language Programming
-Hands-on experience is more important than book knowledge :D
+Hands-on experience is more important than book knowledge :^)
+
+## AT&T vs Intel
+* Operands order:
+    * Intel: destination <- source  
+    * AT&T:  source      -> destination
+
+NASM assembler use Intel syntax.  
+GAS assembler use AT&T syntax.
 
 ## References & Useful links
 * [NASM Tutorial](https://cs.lmu.edu/~ray/notes/nasmtutorial/)

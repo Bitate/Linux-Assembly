@@ -1,0 +1,4 @@
+#!/bin/bash
+
+nasm -f elf64 -o boot.o boot.asm
+gcc -no-pie -o boot.elf init.cpp boot.o
