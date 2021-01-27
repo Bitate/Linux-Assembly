@@ -1,4 +1,10 @@
 #!/bin/bash
 
-nasm -f elf64 -o boot.o boot.asm
-gcc -no-pie -o boot.elf init.cpp boot.o
+# compile the source file and generate elf file
+g++ -o hello.elf hello.cpp
+
+# read elf file content into hello.dump
+readelf -a hello.elf | cat > hello.dump
+
+# disassemble hello.elf into hello.dis
+objdump -D hello.elf | cat > hello.dis
