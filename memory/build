@@ -1,0 +1,3 @@
+nasm -o layout.bin layout.asm
+
+xxd layout.bin
