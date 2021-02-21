@@ -1,3 +1,5 @@
-nasm -f elf32 -g -o layout.bin layout.asm
+# Specify `-F dwarf -g` to help gdb debug.
+nasm -f elf32 -F dwarf -g -o mem.o mem.asm
 
-xxd layout.bin
+ld -m elf_i386 -o mem.exe mem.o
+
